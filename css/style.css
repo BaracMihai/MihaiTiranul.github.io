@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #007f5f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-board {
+    width: 800px;
+    height: 600px;
+    background-color: #004b23;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto auto 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+#stock, #waste, .foundation, .tableau {
+    width: 100px;
+    height: 140px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card {
+    width: 90px;
+    height: 130px;
+    background-size: cover;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.card.hidden {
+    background-color: #004b23;
+}
+
+.card.hide {
+    display: none;
+}
